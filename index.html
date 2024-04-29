@@ -1,54 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>您的名字</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                padding: 1em;
-                background-color: #fff;
-            }
-            canvas {
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            header {
-                position: relative;
-                z-index: 10;
-                text-align: center;
-                padding: 2em;
-            }
-            nav ul {
-                list-style-type: none;
-            }
-            nav ul li {
-                display: inline;
-                margin-right: 1em;
-            }
-            nav ul li a {
-                text-decoration: none;
-                color: #333;
-            }
-        </style>
+        <title>你的名字</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
     </head>
     <body>
-        <canvas id="myCanvas"></canvas>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#intro">个人介绍</a></li>
-                    <li><a href="#works">设计作品</a></li>
-                    <li><a href="#cases">学生案例</a></li>
-                </ul>
-            </nav>
+        <header class="header">
+          <nav class="nav-bar">
+            <ul class="nav-links">
+               <li><a href="#home" class="nav-item">首页</a></li>
+               <li><a href="#portfolio" class="nav-item">作品</a></li>
+               <li><a href="#about" class="nav-item">关于我</a></li>
+               <li><a href="#contact" class="nav-item">联系我</a></li>
+            </ul>
+          </nav>
         </header>
-        <script src="app.js"></script>
+        <main>
+            <section id="home" class="main-section">
+                <h1>欢迎来到我的网站</h1>
+                <p>这是一段简单的欢迎语。</p>
+            </section>
+            <section id="portfolio" class="main-section">
+                <h1>我的作品</h1>
+                <p>这是我作品的一些简介</p>
+            </section>
+            <section id="about" class="main-section">
+                <h1>关于我</h1>
+                <p>这是我的简介</p>
+            </section>
+            <section id="contact" class="main-section">
+                <h1>联系我</h1>
+                <p>这是我的联系方式</p>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>© 2024. My Website. All Rights Reserved.</p>
+        </footer>   
     </body>
 </html>
